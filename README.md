@@ -14,7 +14,18 @@
   ```
   ### Fort Sterling
   ```plaintext
-      Lym Raws
-      Lym Crafting
-      Lym Farming
+     Giống Lym
   ```
+  ### Bridgewatch
+  ```plaintext
+       Giống Lym
+  ```
+  ### Martlock
+  ```plaintext
+       Giống Lym
+  ```
+ ### Thetford
+  ```plaintext
+       Giống Lym
+  ```
+
