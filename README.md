@@ -41,13 +41,24 @@
  ### Descriptions
 
   ```plaintext
-      Cấu hình dữ liệu và pages từ (
+      Cấu hình dữ liệu và pages
+      Raws,Farm:
       https://wiki.albiononline.com/wiki/Local_Production_Bonus
+      Craft:
+      https://wiki.albiononline.com/wiki/Crafting
+      Refine:
       https://albiononline.com/news/guide-refining
   ```
   ```plaintext
       Raws:
       -Raw Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)
+      Farming:
+      -Farm Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)
+      Crafting:
+      -Craft Table (name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)(material1,material2,quantity1,quantity2,Principal)
+      Black Market Check:
+      -BM Table (SellOrder,buyOrder)(material1,material2,quantity1,quantity2,Principal);
+      Material:
+      -Raw Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)
       -Refine Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)(material1,material2,quantity1,quantity2,Principal)
-  
   ```
