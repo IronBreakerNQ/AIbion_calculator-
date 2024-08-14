@@ -38,5 +38,16 @@
   ```plaintext
       Material
   ```
+ ### Descriptions
 
-
+  ```plaintext
+      Cấu hình dữ liệu và pages từ (
+      https://wiki.albiononline.com/wiki/Local_Production_Bonus
+      https://albiononline.com/news/guide-refining
+  ```
+  ```plaintext
+      Raws:
+      -Raw Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)
+      -Refine Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)(material1,material2,quantity1,quantity2,Principal)
+  
+  ```
