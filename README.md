@@ -62,3 +62,45 @@
       -Raw Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)
       -Refine Table(name,sellOrder,buyOrder,price,fiveAvg,tenAvg,lastUpdate)(material1,material2,quantity1,quantity2,Principal)
   ```
+## Database
+### Lym
+```plaintext
+  LymCraft:
+    name: { type: String},
+    material1: {type: String},
+    material2: {type: String},
+    quantity1:{type: Number},
+    quantity2:{type: Number},
+    sellOrder:{
+            city: { type: String },
+            price: { type: String },
+            lastUpdate: {type: String},
+    },
+    buyOrder: {
+            city: { type: String },
+            price: { type: String },
+            lastUpdate: {type: String},
+    }
+
+
+  LymFarm:
+    name: { type: String},
+    sellOrder:{
+            city: { type: String },
+            price: { type: Number },
+            fiveAvg:{type:Number},
+            tenAvg:{type:Number},
+            lastUpdate: {type: String},
+    },
+    buyOrder: {
+            city: { type: String },
+            price: { type: Number },
+            fiveAvg:{type:Number},
+            tenAvg:{type:Number},
+            lastUpdate: {type: String},
+    }
+```
+### Fort_Sterling:Giống Lym
+### Bridgewatch:Giống Lym
+### Martlock:Giống Lym
+### Thetford:Giống Lym
