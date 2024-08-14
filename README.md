@@ -100,7 +100,84 @@
             lastUpdate: {type: String},
     }
 ```
-### Fort_Sterling:Giống Lym
-### Bridgewatch:Giống Lym
-### Martlock:Giống Lym
-### Thetford:Giống Lym
+### Fort_Sterling
+```plaintext
+     Giống Lym
+  ```
+### Bridgewatch
+```plaintext
+     Giống Lym
+  ```
+### Martlock
+```plaintext
+     Giống Lym
+  ```
+### Thetford
+```plaintext
+     Giống Lym
+```
+### Material
+```plaintext
+ Raw:
+   name: { type: String},
+    sellOrder:{
+            city: { type: String },
+            price: { type: Number },
+            fiveAvg:{type:Number},
+            tenAvg:{type:Number},
+            lastUpdate: {type: String},
+    },
+    buyOrder: {
+            city: { type: String },
+            price: { type: Number },
+            fiveAvg:{type:Number},
+            tenAvg:{type:Number},
+            lastUpdate: {type: String},
+    }
+
+Refine:
+  name: { type: String},
+    material1: {type: String},
+    material2: {type: String},
+
+    quantity1:{type: Number},
+    quantity2:{type: Number},
+    
+    Principal:{type: Number},
+    
+    sellOrder:{
+            city: { type: String },
+            price: { type: String },
+            fiveAvg:{type:Number},
+            tenAvg:{type:Number},
+            lastUpdate: {type: String},
+    },
+    buyOrder: {
+            city: { type: String },
+            price: { type: String },
+            fiveAvg:{type:Number},
+            tenAvg:{type:Number},
+            lastUpdate: {type: String},
+    }
+```
+###  Caerleon
+```plaintext
+     name: { type: String},
+    material1: {type: String},
+    material2: {type: String},
+
+    quantity1:{type: Number},
+    quantity2:{type: Number},
+    
+    Principal:{type: Number},
+    
+    sellOrder:{
+            price: { type: String },
+            lastUpdate: {type: String},
+    },
+    buyOrder: {
+            price: { type: String },
+            lastUpdate: {type: String},
+    }
+```
+ 
