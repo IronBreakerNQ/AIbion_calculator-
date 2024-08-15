@@ -4,6 +4,7 @@ const martlock = require('./Martlock');
 const bridgewatch = require('./Bridgewatch');
 const lym = require('./Lym');
 const fortSterling = require('./FortSterling');
+const thetford = require('./Thetford');
 const material = require('./Material');
 
 function route(app){
@@ -12,6 +13,7 @@ function route(app){
     app.use('/Bridgewatch',bridgewatch);  
     app.use('/Lym',lym);  
     app.use('/FortSterling',fortSterling);  
+    app.use('/Thetford',thetford);  
     app.use('/Material',material);  
 
     app.use('/',siteRouter);

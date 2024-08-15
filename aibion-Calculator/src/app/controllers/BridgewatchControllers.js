@@ -266,5 +266,58 @@ class BridgewatchControllers {
             next(error); // Properly handle errors
         }
     }
+
+      //[GET] /Bridgewatch/BWFarm
+      BWFarm = async (req, res, next) => {
+        try {
+            // Lấy dữ liệu từ cả hai cơ sở dữ liệu
+            const dataFarm = await BWFarm.find();
+            // Chuyển đổi dữ liệu Mongoose thành đối tượng JavaScript thuần
+            const transformedDataFarm = mutipleMongooseToObject(dataFarm);
+
+            // Gửi dữ liệu vào view
+            res.render("BridgewatchFarm", {
+                farms: transformedDataFarm,
+            });
+        } catch (error) {
+            next(error); // Properly handle errors
+        }
+    }
+
+    //[GET] /Bridgewatch/BWRefine
+   BWRefine = async (req, res, next) => {
+        try {
+            // Lấy dữ liệu từ cả hai cơ sở dữ liệu
+            const dataRaw = await MTRaw.find({name : /Hide/});
+            const dataRefime = await MTRefine.find({ name: /STONEBLOC/ });
+
+            // Chuyển đổi dữ liệu Mongoose thành đối tượng JavaScript thuần
+            const transformedDataRaw = mutipleMongooseToObject(dataRaw);
+            const transformedDataRefime= mutipleMongooseToObject(dataRefime);
+            // Gửi dữ liệu vào view
+            res.render("BridgewatchRefine", {
+                raws: transformedDataRaw,
+                refine: transformedDataRefime,
+            });
+        } catch (error) {
+            next(error); // Properly handle errors
+        }
+    }
+
+    //[GET] /Bridgewatch/BWCraft
+    BWCraft = async (req,res,next) => {
+        try {
+            // Lấy dữ liệu từ cả hai cơ sở dữ liệu
+            const dataCraft = await BWCraft.find();
+            // Chuyển đổi dữ liệu Mongoose thành đối tượng JavaScript thuần
+            const transformedDataCraft= mutipleMongooseToObject(dataCraft);
+            // Gửi dữ liệu vào view
+            res.render("BridgewatchCraft", {
+                craft: transformedDataCraft,
+            });
+        } catch (error) {
+            next(error); // Properly handle errors
+        }
+    }
 }
 module.exports = new BridgewatchControllers();

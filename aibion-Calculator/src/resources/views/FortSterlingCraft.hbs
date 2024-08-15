@@ -149,13 +149,62 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4"> Home</h1>
+                        <h1 class="mt-4">FortSterling Craft</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active"> Home</li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active">FortSterling Craft</li>
                         </ol>
 
+                             <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                              Craft(Bonus +10%)
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple1">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sell Order (BM )</th>
+                                            <th>Buy Order (BM )</th>
+                                            <th>Sell Order (-5% avg)</th>
+                                            <th>Sell Order (-10% avg )</th>
+                                            <th>Sell Order Last Update</th>
+                                            <th>Buy Order Last Update</th>
 
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sell Order (BM )</th>
+                                            <th>Buy Order (BM )</th>
+                                            <th>Sell Order (-5% avg)</th>
+                                            <th>Sell Order (-10% avg )</th>
+                                            <th>Sell Order Last Update</th>
+                                            <th>Buy Order Last Update</th>
+
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        {{#each craft}}
+                                        <tr>
+                                            <td>{{this.name}}</td>
+                                            <td>{{this.sellOrder.price}}</td>                                                
+                                            <td>{{this.buyOrder.price}}</td>
+
+                                            <td>{{this.sellOrder.fiveAvg}}</td>
+                                            <td>{{this.sellOrder.tenAvg}}</td>
+
+                                            <td>{{this.sellOrder.lastUpdate}}</td>
+                                            <td>{{this.buyOrder.lastUpdate}}</td>
+                                            
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
         
 
                     </div>

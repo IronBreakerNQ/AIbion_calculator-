@@ -149,25 +149,124 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4"> Home</h1>
+                        <h1 class="mt-4"> Thetford Refine</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active"> Home</li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active"> Thetford Refine</li>
                         </ol>
 
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                               raw
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple1">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sell Order (Lym )</th>
+                                            <th>Buy Order (Lym )</th>
+                                            <th>Sell Order (-5% avg)</th>
+                                            <th>Sell Order (-10% avg )</th>
+                                            <th>Sell Order Last Update</th>
+                                            <th>Buy Order Last Update</th>
 
-        
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sell Order (Lym )</th>
+                                            <th>Buy Order (Lym )</th>
+                                            <th>Sell Order (-5% avg)</th>
+                                            <th>Sell Order (-10% avg )</th>
+                                            <th>Sell Order Last Update</th>
+                                            <th>Buy Order Last Update</th>
+
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        {{#each raws}}
+                                        <tr>
+                                            <td>{{this.name}}</td>
+                                            <td>{{this.sellOrder.price}}</td>                                                
+                                            <td>{{this.buyOrder.price}}</td>
+
+                                            <td>{{this.sellOrder.fiveAvg}}</td>
+                                            <td>{{this.sellOrder.tenAvg}}</td>
+
+                                            <td>{{this.sellOrder.lastUpdate}}</td>
+                                            <td>{{this.buyOrder.lastUpdate}}</td>
+                                            
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                               Refine
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple2">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sell Order (Lym )</th>
+                                            <th>Buy Order (Lym )</th>
+                                            <th>Sell Order (-5% avg)</th>
+                                            <th>Sell Order (-10% avg )</th>
+                                            <th>Sell Order Last Update</th>
+                                            <th>Buy Order Last Update</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Sell Order (Lym )</th>
+                                            <th>Buy Order (Lym )</th>
+                                            <th>Sell Order (-5% avg)</th>
+                                            <th>Sell Order (-10% avg )</th>
+                                            <th>Sell Order Last Update</th>
+                                            <th>Buy Order Last Update</th>
+
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        {{#each refine}}
+                                        <tr>
+                                            <td>{{this.name}}</td>
+                                            <td>{{this.sellOrder.price}}</td>                                                
+                                            <td>{{this.buyOrder.price}}</td>
+
+                                            <td>{{this.sellOrder.fiveAvg}}</td>
+                                            <td>{{this.sellOrder.tenAvg}}</td>
+
+                                            <td>{{this.sellOrder.lastUpdate}}</td>
+                                            <td>{{this.buyOrder.lastUpdate}}</td>
+                                            
+                                        </tr>
+                                        {{/each}}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; IronBreakerNQ 2024</div>
+                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
                             <div>
-                                <a href="https://github.com/IronBreakerNQ/AIbion_calculator-/blob/main/Privacy%20Policy">Privacy Policy</a>
+                                <a href="#">Privacy Policy</a>
                                 &middot;
-                                <a href="https://github.com/IronBreakerNQ/AIbion_calculator-">Terms &amp; Conditions</a>
+                                <a href="#">Terms &amp; Conditions</a>
                             </div>
                         </div>
                     </div>
