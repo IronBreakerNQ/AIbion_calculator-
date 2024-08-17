@@ -10,11 +10,19 @@
 ```plaintext
 git clone https://github.com/modularcode/modular-admin-html.git
 ```
-### Build the project
+### 2. Build the project
+### 2.1 Nodejs
 The cloned/downloaded repository doesn't contain prebuilt version of the project and you need to build it. You need to have NodeJs (v8+) with npm (v3+) installed.
+Install npm dependencies.
 ```plaintext
-git clone https://github.com/modularcode/modular-admin-html.git
+npm install
 ```
+Build the project and start local web server
+```plaintext
+npm start
+```
+### 2.2 Docker Build
+Open the project http://localhost:3001.
 ## Pages
   ### Lym 
   ```plaintext
