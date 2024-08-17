@@ -5,6 +5,15 @@
   đồ ở market của aibion , dựa vào dữ liệu từ trang web (https://albiononlinetools.com/)
   get từ axios và phân tích nó bằng cheerio
 ```
+## Getting Started
+### 1. Download ZIP or Git Clone
+```plaintext
+git clone https://github.com/modularcode/modular-admin-html.git
+```
+### Build the project
+#### The cloned/downloaded repository doesn't contain prebuilt version of the project and you need to build it.
+You need to have NodeJs (v8+) with npm (v3+) installed.
+
 ## Pages
   ### Lym 
   ```plaintext
