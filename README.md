@@ -21,8 +21,8 @@ Build the project and start local web server
 ```plaintext
 npm start
 ```
-### 2.2 Docker Build
-Open the project http://localhost:3001.
+### 2.2 Connect String
+Chage connect string in Config/db/index "mongodb://127.0.0.1:27017/yourconnectstring"
 ## Pages
   ### Lym 
   ```plaintext
