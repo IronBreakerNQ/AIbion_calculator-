@@ -17,12 +17,16 @@ Install npm dependencies.
 ```plaintext
 npm install
 ```
+### 2.2 Connect String
+Chage connect string in Config/db/index 
+```plaintext
+"mongodb://127.0.0.1:27017/yourconnectstring"
+```
+### 2.2 Start
 Build the project and start local web server
 ```plaintext
 npm start
 ```
-### 2.2 Connect String
-Chage connect string in Config/db/index "mongodb://127.0.0.1:27017/yourconnectstring"
 ## Pages
   ### Lym 
   ```plaintext
